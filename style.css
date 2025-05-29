@@ -1,0 +1,1026 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #ccffcc;
+    height: 96px;
+    top: 50%;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    /* vertical */
+    height: 100%;
+    /* para alinhar com a altura de nav */
+}
+
+nav .imgNav {
+    width: 35px;
+    height: 35px;
+}
+
+nav ul li:nth-child(1) {
+    margin-left: 50px;
+}
+
+nav ul li:nth-child(2) {
+    margin-left: 10px;
+}
+
+nav ul li:nth-child(3) {
+    margin-left: 50px;
+}
+
+nav ul li:nth-child(4) {
+    margin-left: 10px;
+}
+
+nav ul li:nth-child(5) {
+    margin-left: 50px;
+}
+
+nav ul li:nth-child(6) {
+    margin-left: 10px;
+}
+
+nav ul li a:not(:has(img)) {
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    top: -2.5px;
+}
+
+nav ul li a:not(:has(img))::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 2px;
+    width: 0%;
+    background-color: green;
+    transition: width 0.3s ease-in-out;
+}
+
+nav ul li a:not(:has(img)):hover::after {
+    width: 100%;
+}
+
+nav .navButton {
+    background: linear-gradient(to right, rgb(52, 165, 68) 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: left;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    height: 60px;
+    width: 215px;
+    margin-left: 340px;
+    transition: background-position 0.4s ease, color 0.4s ease, transform 0.3s ease;
+}
+
+nav .navButton:hover {
+    background-position: right;
+    color: rgb(52, 165, 68);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+nav .iconeWhatsappNav {
+    width: 15px;
+    height: 15px;
+    margin-left: 2.5px;
+    vertical-align: middle;
+    animation: mover-horizontal 0.6s infinite alternate;
+}
+
+@keyframes mover-horizontal {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(5px);
+    }
+}
+
+.divPrincipal {
+    height: 700px;
+    color: #ccffcc;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.divPrincipal .divPrincipalConteudo {
+    margin-left: 50px;
+}
+
+.divPrincipal .divPrincipalConteudo .divPrincipalConteudoLogo {
+    display: flex;
+}
+
+.divPrincipal .divPrincipalConteudo .divPrincipalConteudoLogo .divPrincipalConteudoLogoImg {
+    height: 60px;
+    width: 60px;
+    margin-top: -4px;
+    margin-right: 5px;
+}
+
+.divPrincipal .divPrincipalConteudo .divPrincipalConteudoLogo .divPrincipalConteudoLogoTxt .divPrincipalTxt1 {
+    margin-left: 0px;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: goldenrod;
+}
+
+.divPrincipal .divPrincipalConteudo .divPrincipalConteudoLogo .divPrincipalConteudoLogoTxt .divPrincipalTxt2 {
+    font-size: 15px;
+    margin-bottom: 100px;
+    margin-top: -10px;
+    text-transform: uppercase;
+    color: goldenrod;
+}
+
+.divPrincipalTxt3 {
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 30px;
+    padding-right: 500px;
+}
+
+.divPrincipalButton {
+    background: linear-gradient(to right, rgb(52, 165, 68) 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: left;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    height: 60px;
+    width: 300px;
+    margin-bottom: 130px;
+    transition: background-position 0.4s ease, color 0.4s ease, transform 0.3s ease;
+}
+
+.divPrincipalButton:hover {
+    background-position: right;
+    color: rgb(52, 165, 68);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.divAreas {
+    background-color: #ccffcc;
+    height: 850px;
+    display: grid;
+    align-items: center;
+    text-align: center;
+}
+
+.divAreas .divAreasConteudo {
+    margin-top: 0px;
+}
+
+.divAreas .divAreasConteudo .divAreasTxt {
+    text-align: center;
+    font-size: 35px;
+}
+
+.carrossel2 {
+    position: relative;
+    /* Necessário para posicionar a div.carousel dentro dela */
+    width: 100%;
+    /* Ajuste conforme necessário */
+    height: 600px;
+    /* Definindo uma altura para o contêiner pai */
+}
+
+/* Contêiner do carrossel - carousel */
+.carousel2 {
+    position: absolute;
+    /* Isso faz com que a div.carousel seja posicionada relativamente à div.carrossel2 */
+    width: 1225px;
+    /* Largura do carrossel */
+    height: 500px;
+    /* Altura do carrossel */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Centraliza a div.carousel dentro da div.carrossel2 */
+}
+
+.carousel2-cell {
+    width: 365px;
+    height: 500px;
+    /* Altura do carrossel */
+    margin-right: 65px;
+    /* Espaçamento entre as imagens */
+    text-align: center;
+    cursor: pointer;
+}
+
+.carousel2-cell img {
+    width: 365px;
+    /* Largura de cada imagem */
+    height: 365px;
+    /* Altura de cada imagem */
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.carousel2-cell p {
+    font-size: 27.5px;
+    color: black;
+    margin-top: 7.5px;
+}
+
+.carrossel2 .btn {
+    position: absolute;
+    background-color: black;
+    color: #ccffcc;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: -67px;
+}
+
+.btn3-prev {
+    margin-left: -645px;
+}
+
+.btn4-next {
+    margin-left: 645px;
+}
+
+/* Estilo para o marcador */
+.marcador2 {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+    transition: left 0.3s ease;
+    /* Animação suave quando o marcador se mover */
+    margin-top: -30px;
+    margin-left: 640px;
+}
+
+.modal-carrossel {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-conteudo {
+    background-color: #002c00;
+    color: white;
+    margin: 10% auto;
+    padding: 45px;
+    width: 90%;
+    max-width: 650px;
+    border-radius: 12px;
+    text-align: left;
+}
+
+.modal-carrossel .modal-conteudo #modalTitulo {
+    text-transform: uppercase;
+    font-size: 27px;
+    line-height: 1.25;
+}
+
+.modal-carrossel .modal-conteudo .modalLinha {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: none;
+    background-color: rgb(88, 88, 88);
+    border-top: 0.01px dotted;
+}
+
+.modal-carrossel .modal-conteudo #modalTexto {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.fechar {
+    float: right;
+    font-size: 26px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: -30px;
+    margin-right: -22.5px;
+}
+
+.divDiferencial {
+    background-color: #002c00;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.divDiferencial .divDiferencialConteudo .divDiferencialTxt {
+    margin-bottom: 50px;
+}
+
+.divDiferencial .divDiferencialTxt {
+    text-align: center;
+    font-size: 35px;
+    color: #ccffcc;
+}
+
+.divDiferencial .divDiferencialConteudoDetalhado {
+    display: flex;
+}
+
+.divDiferencial .divDiferencialConteudoDetalhado1,
+.divDiferencial .divDiferencialConteudoDetalhado2,
+.divDiferencial .divDiferencialConteudoDetalhado3 {
+    background-color: white;
+    width: 400px;
+    text-align: left;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.divDiferencial .divDiferencialConteudoDetalhado1 {
+    height: 375px;
+}
+
+.divDiferencial .divDiferencialConteudoDetalhado2 {
+    height: 355px;
+}
+
+.divDiferencial .divDiferencialConteudoDetalhado3 {
+    height: 380px;
+}
+
+.divDiferencial .divDiferencialConteudoDetalhado img {
+    height: 65px;
+    width: 65px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.divDiferencial .divDiferencialConteudoDetalhado .divDiferencialConteudoDetalhado1 .divDiferencialConteudoDetalhado1Txt1,
+.divDiferencial .divDiferencialConteudoDetalhado .divDiferencialConteudoDetalhado2 .divDiferencialConteudoDetalhado2Txt1,
+.divDiferencial .divDiferencialConteudoDetalhado .divDiferencialConteudoDetalhado3 .divDiferencialConteudoDetalhado3Txt1 {
+    margin-top: 20px;
+    margin-left: 50px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.divDiferencial .divDiferencialConteudoDetalhado .linhaDiferencialConteudoDetalhado {
+    border: none;
+    background-color: lightgray;
+    height: 0.1px;
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.divDiferencial .divDiferencialConteudoDetalhado .divDiferencialConteudoDetalhado1 .divDiferencialConteudoDetalhado1Txt2,
+.divDiferencial .divDiferencialConteudoDetalhado .divDiferencialConteudoDetalhado2 .divDiferencialConteudoDetalhado2Txt2,
+.divDiferencial .divDiferencialConteudoDetalhado .divDiferencialConteudoDetalhado3 .divDiferencialConteudoDetalhado3Txt2 {
+    margin-top: 30px;
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+footer {
+    background-color: black;
+    height: 100%;
+    color: #ccffcc;
+}
+
+footer .divContato {
+    display: flex;
+    width: 1350px;
+    height: 550px;
+}
+
+footer .divContato1 {
+    height: 100%;
+    width: 50%;
+    font-weight: bold;
+}
+
+footer .divContato1 .divContato1Conteudo {
+    margin-top: 70px;
+    margin-left: 115px;
+}
+
+footer .divContato1 .divContato1Conteudo .divContato1ConteudoTxt {
+    font-size: 29px;
+    margin-bottom: 10px;
+}
+
+footer .divContato1 .divContato1Conteudo input {
+    height: 60px;
+    width: 550px;
+    margin-top: 8px;
+    border: none;
+    border-radius: 5px;
+    padding-left: 20px;
+    font-size: 15px;
+}
+
+footer .divContato1 .divContato1Conteudo input:focus,
+footer .divContato1 .divContato1Conteudo textarea:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+footer .divContato1 .divContato1Conteudo textarea {
+    height: 120px;
+    width: 550px;
+    margin-top: 8px;
+    border: none;
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer .divContato1 .divContato1Conteudo button {
+    height: 60px;
+    width: 550px;
+    margin-top: 8px;
+    background-color: yellow;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+footer .divContato2 {
+    height: 100%;
+    width: 50%;
+}
+
+footer .divContato2 .divContato2Conteudo {
+    margin-top: 80px;
+    margin-left: 50px;
+}
+
+footer .divContato2 .divContato2Conteudo .divContato2ConteudoTxt {
+    font-size: 27.5px;
+    margin-bottom: 20px;
+}
+
+footer .divContato2 ul {
+    font-size: 18.5px;
+    list-style-type: none;
+    padding-left: 0;
+    list-style: none;
+}
+
+footer .divContato2 ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* Espaço entre a imagem e o texto */
+    margin-bottom: 20px;
+}
+
+footer .divContato2 ul li a {
+    text-decoration: none;
+    color: #ccffcc;
+}
+
+footer .divContato2 .divContato2Conteudo .imgContato {
+    width: 25px;
+    height: 25px;
+    background-color: #ccffcc;
+}
+
+footer .divContato2 .divContato2Conteudo .linhaContato {
+    border: none;
+    background-color: gray;
+    border-top: 0.1px dotted;
+    width: 80%;
+    margin-top: -5px;
+    margin-bottom: 15px;
+    margin-left: 0px;
+}
+
+footer .divServicos {
+    background-image: linear-gradient(to left, rgba(0, 32, 96, 0.8), rgba(0, 32, 96, 0) 75%),
+        url('img/postura-plana-conceito-de-mesa-com-espaco-de-copia(1).jpg');
+    background-repeat: no-repeat;
+    display: flex;
+    width: 1350px;
+    height: 435px;
+    background-size: cover;
+    background-position: center center;
+}
+
+footer .divServicos1 {
+    width: 50%;
+}
+
+footer .divServicos1 .divServicos1Conteudo {
+    margin-top: 80px;
+    margin-left: 70px;
+}
+
+footer .divServicos1 .divServicos1Conteudo .divServicos1ConteudoLogo {
+    display: flex;
+    margin-bottom: 35px;
+}
+
+footer .divServicos1 .divServicos1Conteudo .divServicos1ConteudoLogo .divServicos1ConteudoLogoImg {
+    height: 70px;
+    width: 70px;
+    margin-top: 0px;
+    margin-right: 0px;
+}
+
+footer .divServicos1 .divServicos1Conteudo .divServicos1ConteudoTxt1 {
+    font-size: 50px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    color: goldenrod;
+}
+
+footer .divServicos1 .divServicos1Conteudo .divServicos1ConteudoTxt2 {
+    font-size: 18.75px;
+    margin-top: -12.5px;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    color: goldenrod;
+}
+
+footer .divServicos1 .divServicos1Conteudo a {
+    color: #ccffcc;
+}
+
+footer .divServicos2 {
+    width: 50%;
+}
+
+footer .divServicos2 .divServicos2Conteudo {
+    margin-top: 80px;
+    margin-left: 175px;
+}
+
+footer .divServicos2 .divServicos2Conteudo .divServicos2ConteudoTxt {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+footer .divServicos2 .divServicos2Conteudo ul li {
+    list-style-type: none;
+    font-size: 17.5px;
+    margin-top: 10px;
+}
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.1);
+    background-color: white;
+}
+
+.whatsapp-button img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Barra de rolagem para Chrome, Edge e Safari */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #ccffcc;
+    /* verde bem claro */
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(52, 165, 68);
+    /* verde principal */
+    border-radius: 10px;
+    border: 2px solid #ccffcc;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #3dbf5f;
+    /* verde um pouco mais claro no hover */
+}
+
+/* Para Firefox */
+html {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(52, 165, 68) #ccffcc;
+}
+
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: #ccffcc;
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    display: none;
+    /* Começa oculto */
+    font-weight: bold;
+}
+
+.cookie-banner p {
+    margin-bottom: 10px;
+}
+
+.cookie-banner a {
+    color: rgb(52, 165, 68);
+    text-decoration: underline;
+}
+
+.cookie-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.cookie-buttons button {
+    background-color: rgb(52, 165, 68);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.cookie-buttons button:hover {
+    background-color: white;
+    color: rgb(52, 165, 68);
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+
+    body {
+        height: 100%;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .divPrincipal {
+        background-image: linear-gradient(to bottom, rgba(0, 32, 96, 0.8), rgba(0, 32, 96, 0.192) 85%),
+            url('img/assinatura-de-contratos(1).jpg');
+        background-size: 100% 450px;
+        height: 450px;
+    }
+
+    .divPrincipal .divPrincipalConteudo .divPrincipalConteudoLogo {
+        margin-top: 140px;
+        margin-bottom: 0px;
+        margin-left: 75px;
+    }
+
+    .divPrincipal .divPrincipalConteudo .divPrincipalTxt1 {
+        text-align: center;
+    }
+
+    .divPrincipal .divPrincipalConteudo .divPrincipalTxt2 {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .divPrincipal .divPrincipalConteudo .divPrincipalTxt3 {
+        font-weight: bold;
+        font-size: 40px;
+        margin-top: -80px;
+        margin-bottom: 0px;
+        margin-left: -65px;
+        text-align: center;
+        padding-right: 30px;
+        padding-left: 45px;
+    }
+
+    .divPrincipal .divPrincipalConteudo .divPrincipalButton {
+        margin-top: 0px;
+        margin-left: -25px;
+        height: 60px;
+        width: 440px;
+    }
+
+    .divAreas {
+        height: 600px;
+    }
+
+    .divAreas .divAreasConteudo {
+        height: 325px;
+        margin-top: -200px;
+        margin-left: -365px;
+    }
+
+    .divDiferencial {
+        height: 1300px;
+    }
+
+    .divDiferencial .divDiferencialConteudo .divDiferencialTxt {
+        margin-top: 0px;
+        margin-bottom: 50px;
+    }
+
+    .divDiferencial .divDiferencialConteudo .divDiferencialConteudoDetalhado {
+        margin-top: 0px;
+        margin-left: 11.5px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    footer .divContato {
+        height: 700px;
+    }
+
+    footer .divContato,
+    footer .divServicos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer .divContato .divContato1 .divContato1Conteudo {
+        margin-top: 0px;
+        margin-left: -42.5px;
+        transform: scale(0.85);
+    }
+
+    footer .divContato .divContato2 .divContato2Conteudo {
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+
+    footer .divContato2 .divContato2Conteudo .linhaContato {
+        width: 62.5%;
+    }
+
+    footer .divServicos {
+        background-size: 100% 600px;
+        height: 600px;
+    }
+
+    footer .divServicos .divServicos1 .divServicos1Conteudo {
+        margin-top: 100px;
+        margin-left: 50px;
+    }
+
+    footer .divServicos .divServicos2 .divServicos2Conteudo {
+        margin-top: 50px;
+        margin-bottom: 0px;
+        margin-left: 50px;
+    }
+
+}
+
+@media (max-width: 212.5px) {
+
+    body {
+        height: 100%;
+        width: 212.5px;
+        overflow-x: hidden;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .divPrincipal {
+        background-image: linear-gradient(to bottom, rgba(0, 32, 96, 0.8), rgba(0, 32, 96, 0.192) 85%),
+            url('img/assinatura-de-contratos(1).jpg');
+        background-size: 100% 265px;
+        height: 265px;
+    }
+
+    .divPrincipal .divPrincipalConteudo {
+        height: 265px;
+        width: 212.5px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+    }
+
+    .divPrincipal .divPrincipalConteudo .divPrincipalConteudoLogo {
+        margin-top: -5px;
+        margin-bottom: -90px;
+        margin-left: -5px;
+        transform: scale(0.65);
+    }
+
+    .divPrincipal .divPrincipalConteudo .divPrincipalTxt3 {
+        margin-top: 10px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        padding: 5px;
+        font-weight: bold;
+        font-size: 21px;
+        text-align: center;
+    }
+
+    .divPrincipal .divPrincipalConteudo .divPrincipalButton {
+        margin-top: -10px;
+        margin-bottom: 0px;
+        margin-left: -45px;
+        transform: scale(0.65);
+    }
+
+    .divAreas {
+        height: 300px;
+    }
+
+    .divAreas .divAreasConteudo {
+        height: 600px;
+        width: 425px;
+        margin-top: -150px;
+        margin-left: -106.25px;
+        transform: scale(0.5);
+    }
+
+    .divAreas .divAreasConteudo .divAreasTxt {
+        margin-top: 30px;
+    }
+
+    .divAreas .divAreasConteudo .carrossel2 .marcador2 {
+        margin-left: 200px;
+    }
+
+    .modal-carrossel {
+        transform: scale(0.5);
+        margin-left: -140px;
+    }
+
+    .divDiferencial {
+        height: 625px;
+    }
+
+    .divDiferencial .divDiferencialConteudo {
+        height: 625px;
+        width: 212.5px;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    .divDiferencial .divDiferencialConteudo .divDiferencialTxt {
+        transform: scale(0.4);
+        margin-top: -15px;
+        margin-bottom: -305px;
+    }
+
+    .divDiferencial .divDiferencialConteudo .divDiferencialConteudoDetalhado {
+        transform: scale(0.5);
+        margin-top: 0px;
+        margin-left: -63px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    footer .divContato {
+        height: 260px;
+        width: 212.5px;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    footer .divContato1 {
+        height: 170px;
+        width: 100%;
+    }
+
+    footer .divContato2 {
+        height: 90px;
+        width: 100%;
+    }
+
+    footer .divContato, footer .divServicos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer .divContato .divContato1 .divContato1Conteudo {
+        transform: scale(0.35);
+        margin-top: -105px;
+        margin-left: -85px;
+    }
+
+    footer .divContato .divContato1 .divContato1Conteudo .divContato1ConteudoTxt {
+        white-space: nowrap
+    }
+
+    footer .divContato .divContato2 .divContato2Conteudo {
+        transform: scale(0.35);
+        margin-top: -60px;
+        margin-left: -50px;
+        white-space: nowrap
+    }
+
+    footer .divContato2 .divContato2Conteudo .linhaContato {
+        width: 150%;
+    }
+
+    footer .divServicos {
+        background-size: 212.5px 300px;
+        height: 235px;
+        width: 212.5px;
+    }
+
+    footer .divServicos1 {
+        height: 70px;
+        width: 100%;
+    }
+
+    footer .divServicos2 {
+        height: 165px;
+        width: 100%;
+    }
+
+    footer .divServicos .divServicos1 .divServicos1Conteudo {
+        transform: scale(0.35);
+        margin-top: -25px;
+        margin-bottom: 0px;
+        margin-left: -20px;
+    }
+
+    footer .divServicos .divServicos2 .divServicos2Conteudo {
+        transform: scale(0.5);
+        margin-top: -50px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        white-space: nowrap
+    }
+
+    .whatsapp-button {
+        transform: scale(0.5);
+        position: fixed;
+        bottom: -5px;
+        left: 32.5%;
+    }
+
+    .cookie-banner {
+        transform: scale(0.425);
+        margin-left: -139px;
+        bottom: -30px;
+    }
+
+}
