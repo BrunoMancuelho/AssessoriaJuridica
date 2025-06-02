@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
 nav {
     background-color: #ccffcc;
     height: 96px;
@@ -541,7 +546,7 @@ footer .divServicos {
         url('img/postura-plana-conceito-de-mesa-com-espaco-de-copia(1).jpg');
     background-repeat: no-repeat;
     display: flex;
-    width: 1350px;
+    width: 100%;
     height: 435px;
     background-size: cover;
     background-position: center center;
@@ -834,13 +839,7 @@ html {
 
 }
 
-@media (max-width: 430px) {
-
-    body {
-        height: 100%;
-        width: 212.5px;
-        overflow-x: hidden;
-    }
+@media (max-width: 390px) {
 
     nav {
         display: none;
@@ -849,97 +848,95 @@ html {
     .divPrincipal {
         background-image: linear-gradient(to bottom, rgba(0, 32, 96, 0.8), rgba(0, 32, 96, 0.192) 85%),
             url('img/assinatura-de-contratos(1).jpg');
-        background-size: 100% 265px;
-        height: 265px;
+        background-size: 100% 365px;
+        height: 365px;
     }
 
     .divPrincipal .divPrincipalConteudo {
         height: 265px;
-        width: 212.5px;
-        margin-top: 0px;
-        margin-bottom: 0px;
+        width: 100%;
         margin-left: 0px;
     }
 
     .divPrincipal .divPrincipalConteudo .divPrincipalConteudoLogo {
-        margin-top: -5px;
-        margin-bottom: -90px;
-        margin-left: -5px;
-        transform: scale(0.65);
+        margin-left: 65px;
+        transform: scale(0.85);
+        margin-top: -10px;
     }
 
     .divPrincipal .divPrincipalConteudo .divPrincipalTxt3 {
-        margin-top: 10px;
-        margin-bottom: 0px;
-        margin-left: 0px;
-        padding: 5px;
+        padding-right: 40px;
+        padding-left: 40px;
         font-weight: bold;
-        font-size: 21px;
+        font-size: 32.5px;
         text-align: center;
+        margin-top: -85px;
+        margin-bottom: 0;
     }
 
     .divPrincipal .divPrincipalConteudo .divPrincipalButton {
-        margin-top: -10px;
-        margin-bottom: 0px;
-        margin-left: -45px;
-        transform: scale(0.65);
+        margin-left: 20px;
+        height: 50px;
+        width: 350px;
     }
 
     .divAreas {
-        height: 300px;
+        height: 460px;
     }
 
     .divAreas .divAreasConteudo {
-        height: 600px;
-        width: 425px;
-        margin-top: -150px;
-        margin-left: -106.25px;
-        transform: scale(0.5);
+        height: 460px;
+        width: 390px;
+        margin-top: 0px;
+        margin-left: 0px;
     }
 
     .divAreas .divAreasConteudo .divAreasTxt {
-        margin-top: 30px;
+        margin-top: 25px;
+        font-size: 30px;
+    }
+
+    .divAreas .divAreasConteudo .carrossel2 {
+        transform: scale(0.8);
+        margin-top: -75px;
     }
 
     .divAreas .divAreasConteudo .carrossel2 .marcador2 {
-        margin-left: 200px;
+        margin-left: 175px;
     }
 
     .modal-carrossel {
-        transform: scale(0.5);
-        margin-left: -140px;
+        margin-left: 0px;
     }
 
     .divDiferencial {
-        height: 625px;
+        height: 1040px;
     }
 
     .divDiferencial .divDiferencialConteudo {
-        height: 625px;
-        width: 212.5px;
-        margin-top: 0px;
+        height: 1040px;
+        width: 100%;
         margin-left: 0px;
     }
 
     .divDiferencial .divDiferencialConteudo .divDiferencialTxt {
-        transform: scale(0.4);
-        margin-top: -15px;
-        margin-bottom: -305px;
+        transform: scale(0.8);
+        margin-top: 25px;
+        margin-bottom: 0px;
     }
 
     .divDiferencial .divDiferencialConteudo .divDiferencialConteudoDetalhado {
-        transform: scale(0.5);
-        margin-top: 0px;
-        margin-left: -63px;
+        transform: scale(0.8);
+        margin-top: -85px;
+        margin-left: 0px;
         display: flex;
         flex-direction: column;
         gap: 15px;
     }
 
     footer .divContato {
-        height: 260px;
-        width: 212.5px;
-        margin-top: 0px;
+        height: 315px;
+        width: 100%;
         margin-left: 0px;
     }
 
@@ -949,7 +946,7 @@ html {
     }
 
     footer .divContato2 {
-        height: 90px;
+        height: 145px;
         width: 100%;
     }
 
@@ -959,9 +956,9 @@ html {
     }
 
     footer .divContato .divContato1 .divContato1Conteudo {
-        transform: scale(0.35);
-        margin-top: -105px;
-        margin-left: -85px;
+        transform: scale(0.675);
+        margin-top: -40px;
+        margin-left: -65px;
     }
 
     footer .divContato .divContato1 .divContato1Conteudo .divContato1ConteudoTxt {
@@ -969,58 +966,66 @@ html {
     }
 
     footer .divContato .divContato2 .divContato2Conteudo {
-        transform: scale(0.35);
-        margin-top: -60px;
-        margin-left: -50px;
-        white-space: nowrap
-    }
-
-    footer .divContato2 .divContato2Conteudo .linhaContato {
-        width: 150%;
-    }
-
-    footer .divServicos {
-        background-size: 212.5px 300px;
-        height: 235px;
-        width: 212.5px;
-    }
-
-    footer .divServicos1 {
-        height: 70px;
-        width: 100%;
-    }
-
-    footer .divServicos2 {
-        height: 165px;
-        width: 100%;
-    }
-
-    footer .divServicos .divServicos1 .divServicos1Conteudo {
-        transform: scale(0.35);
-        margin-top: -25px;
-        margin-bottom: 0px;
-        margin-left: -20px;
-    }
-
-    footer .divServicos .divServicos2 .divServicos2Conteudo {
-        transform: scale(0.5);
-        margin-top: -50px;
-        margin-bottom: 0px;
+        transform: scale(0.8);
+        margin-top: 125px;
         margin-left: 0px;
         white-space: nowrap
     }
 
-    .whatsapp-button {
-        transform: scale(0.5);
-        position: fixed;
-        bottom: -5px;
-        left: 32.5%;
+    footer .divContato2 .divContato2Conteudo .linhaContato {
+        width: 100%;
     }
 
-    .cookie-banner {
-        transform: scale(0.425);
-        margin-left: -139px;
-        bottom: -30px;
+    footer .divServicos {
+        background-size: 100% 510px;
+        height: 510px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 200px;
+        margin-bottom: 0px;
+        padding: 0px;
+    }
+
+    footer .divServicos1 {
+        height: 175px;
+        width: 100%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    }
+
+    footer .divServicos2 {
+        height: 335px;
+        width: 100%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    }
+
+    footer .divServicos .divServicos1 .divServicos1Conteudo .divServicos1ConteudoLogo {
+        transform: scale(0.8);
+        margin-top: -25px;
+        margin-bottom: 0px;
+        margin-left: -35px;
+    }
+
+    footer .divServicos .divServicos1 .divServicos1Conteudo .divServicos1ConteudoPolitica {
+        transform: scale(0.8);
+        position: relative;
+        margin-top: -35px;
+    }
+
+    footer .divServicos .divServicos2 .divServicos2Conteudo .divServicos2ConteudoTxt {
+        margin-top: -50px;
+    }
+    
+    footer .divServicos .divServicos2 .divServicos2Conteudo .divServicos2ConteudoTxt,
+    footer .divServicos .divServicos2 .divServicos2Conteudo ul{
+        transform: scale(0.9);
+        margin-bottom: 0px;
+        margin-left: -150px;
+        white-space: nowrap
     }
 
 }
