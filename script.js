@@ -7,39 +7,6 @@ document.querySelector('.divPrincipalButton').addEventListener('click', function
     window.open('https://wa.me/5541995132346', '_blank');
 });
 //----------------------------------------------------------------------------------------------------------------------------------------
-// Troca as imagens do fundo da divPrincipal.
-const divPrincipal = document.querySelector('.divPrincipal');
-
-const imagens = [
-    'img/assinatura-de-contratos(1).jpg',
-    'img/close_up_em_moedas_economizadas_para_despesas_de_crise_de_energia1.jpg',
-    'img/empresario-assinando-papeis-de-contrato-importantes(1).jpg',
-    'img/empresario-bem-sucedido-trabalhando(1).jpg',
-    'img/empresario-trabalhando-em-tablet-em-um-cafe(1).jpg',
-    'img/homem-fazendo-seu-proximo-movimento(1).jpg',
-    'img/postura-plana-conceito-de-mesa-com-espaco-de-copia(1).jpg',
-    'img/retrato_de_um_agricultor_agronomo_bem_sucedido_em_um_campo_de_trigo1.jpg',
-    'img/sector-imobiliario(1).jpg',
-    'img/vista_monocromatica_empresario_bonito_na_sala_esta_bebendo_bebida.jpg'
-];
-
-let index = 0;
-
-function trocarFundo() {
-    const gradiente = 'linear-gradient(to right, rgba(0, 32, 96, 0.8), rgba(0, 32, 96, 0.192) 85%)';
-    const imagemAtual = imagens[index];
-    divPrincipal.style.backgroundImage = `${gradiente}, url('${imagemAtual}')`;
-
-    index++;
-    if (index >= imagens.length) index = 0;
-}
-
-// Troca imediata
-trocarFundo();
-
-// Troca a cada 10 segundos (10000 ms)
-setInterval(trocarFundo, 10000);
-//----------------------------------------------------------------------------------------------------------------------------------------
 // Inicializa o Flickity para o carrossel2
 var flkty2 = new Flickity('.carousel2', {
     cellAlign: 'left',
