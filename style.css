@@ -6,15 +6,24 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}  
+
 html, body {
     width: 100%;
     height: 100%;
 }
 
 nav {
-    background-color: #ccffcc;
+    background-color: #172b3d;
     height: 96px;
+    width: 100%;
     top: 50%;
+    padding-left: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav ul {
@@ -25,40 +34,25 @@ nav ul {
     height: 100%;
 }
 
+nav ul li a:nth-child(1) {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    margin-left: 50px;
+}
+
 nav .imgNav {
     width: 35px;
     height: 35px;
 }
 
-nav ul li:nth-child(1) {
-    margin-left: 50px;
-}
-
-nav ul li:nth-child(2) {
-    margin-left: 10px;
-}
-
-nav ul li:nth-child(3) {
-    margin-left: 50px;
-}
-
-nav ul li:nth-child(4) {
-    margin-left: 10px;
-}
-
-nav ul li:nth-child(5) {
-    margin-left: 50px;
-}
-
-nav ul li:nth-child(6) {
-    margin-left: 10px;
-}
-
 nav ul li a:not(:has(img)) {
     position: relative;
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: large;
+    margin-left: 50px;
     top: -2.5px;
 }
 
@@ -69,7 +63,7 @@ nav ul li a:not(:has(img))::after {
     bottom: -5px;
     height: 2px;
     width: 0%;
-    background-color: green;
+    background-color: white;
     transition: width 0.3s ease-in-out;
 }
 
@@ -88,8 +82,8 @@ nav .navButton {
     border-radius: 50px;
     height: 60px;
     width: 215px;
-    margin-left: 340px;
     transition: background-position 0.4s ease, color 0.4s ease, transform 0.3s ease;
+    margin-left: 125px;
 }
 
 nav .navButton:hover {
@@ -121,7 +115,7 @@ nav .iconeWhatsappNav {
     background-image: linear-gradient(to right, rgba(0, 32, 96, 0.8), rgba(0, 32, 96, 0.192) 85%), 
                       url('img/assinatura-de-contratos(1).jpg');
     height: 700px;
-    color: #ccffcc;
+    color: white;
     display: flex;
     align-items: center;
     background-size: cover;
@@ -133,28 +127,31 @@ nav .iconeWhatsappNav {
     margin-left: 50px;
 }
 
-.divPrincipal .divPrincipalConteudo .divPrincipalConteudoLogo {
+header nav ul li .headerConteudoLogo {
     display: flex;
 }
 
-.divPrincipal .divPrincipalConteudo .divPrincipalConteudoLogo .divPrincipalConteudoLogoImg {
-    height: 60px;
-    width: 60px;
-    margin-top: -4px;
+.divPrincipal .divPrincipalConteudo .divPrincipalConteudoLogo {
+    display: none;
+}
+
+header nav ul li .headerConteudoLogo .headerConteudoLogoImg {
+    height: 70px;
+    width: 70px;
     margin-right: 5px;
 }
 
-.divPrincipal .divPrincipalConteudo .divPrincipalConteudoLogo .divPrincipalConteudoLogoTxt .divPrincipalTxt1 {
+header nav ul li .headerConteudoLogo .headerConteudoLogoTxt .headerTxt1 {
+    margin-top: 5px;
     margin-left: 0px;
     font-size: 40px;
     text-transform: uppercase;
     color: goldenrod;
 }
 
-.divPrincipal .divPrincipalConteudo .divPrincipalConteudoLogo .divPrincipalConteudoLogoTxt .divPrincipalTxt2 {
+header nav ul li .headerConteudoLogo .headerConteudoLogoTxt .headerTxt2 {
+    margin-top: -5px;
     font-size: 15px;
-    margin-bottom: 100px;
-    margin-top: -10px;
     text-transform: uppercase;
     color: goldenrod;
 }
@@ -189,7 +186,7 @@ nav .iconeWhatsappNav {
 }
 
 .divAreas {
-    background-color: #ccffcc;
+    background-color: white;
     height: 850px;
     display: grid;
     align-items: center;
@@ -203,6 +200,7 @@ nav .iconeWhatsappNav {
 .divAreas .divAreasConteudo .divAreasTxt {
     text-align: center;
     font-size: 35px;
+    color: #172b3d;
 }
 
 .carrossel2 {
@@ -237,14 +235,14 @@ nav .iconeWhatsappNav {
 
 .carousel2-cell p {
     font-size: 27.5px;
-    color: black;
+    color: #172b3d;
     margin-top: 7.5px;
 }
 
 .carrossel2 .btn {
     position: absolute;
-    background-color: black;
-    color: #ccffcc;
+    background-color: #172b3d;
+    color: white;
     border: none;
     cursor: pointer;
     z-index: 1;
@@ -270,7 +268,7 @@ nav .iconeWhatsappNav {
     position: absolute;
     width: 10px;
     height: 10px;
-    background-color: black;
+    background-color: #172b3d;
     border-radius: 50%;
     transition: left 0.3s ease;
     margin-top: -30px;
@@ -290,7 +288,7 @@ nav .iconeWhatsappNav {
 }
 
 .modal-conteudo {
-    background-color: #002c00;
+    background-color: #172b3d;
     color: white;
     margin: 10% auto;
     padding: 45px;
@@ -329,7 +327,7 @@ nav .iconeWhatsappNav {
 }
 
 .divDiferencial {
-    background-color: #002c00;
+    background-color: #172b3d;
     height: 700px;
     display: flex;
     justify-content: center;
@@ -344,7 +342,7 @@ nav .iconeWhatsappNav {
 .divDiferencial .divDiferencialTxt {
     text-align: center;
     font-size: 35px;
-    color: #ccffcc;
+    color: white;
 }
 
 .divDiferencial .divDiferencialConteudoDetalhado {
@@ -407,9 +405,9 @@ nav .iconeWhatsappNav {
 }
 
 footer {
-    background-color: black;
+    background-color: lightblue;
     height: 100%;
-    color: #ccffcc;
+    color: white;
 }
 
 footer .divContato {
@@ -432,13 +430,14 @@ footer .divContato1 .divContato1Conteudo {
 footer .divContato1 .divContato1Conteudo .divContato1ConteudoTxt {
     font-size: 29px;
     margin-bottom: 10px;
+    color: #172b3d;
 }
 
 footer .divContato1 .divContato1Conteudo input {
     height: 60px;
     width: 550px;
     margin-top: 8px;
-    border: none;
+    border: 2px solid #172b3d;
     border-radius: 5px;
     padding-left: 20px;
     font-size: 15px;
@@ -447,7 +446,7 @@ footer .divContato1 .divContato1Conteudo input {
 footer .divContato1 .divContato1Conteudo input:focus,
 footer .divContato1 .divContato1Conteudo textarea:focus {
     outline: none;
-    border: none;
+    border: 2px solid #172b3d;
     box-shadow: none;
 }
 
@@ -461,6 +460,7 @@ footer .divContato1 .divContato1Conteudo textarea {
     padding-left: 20px;
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid #172b3d;
 }
 
 footer .divContato1 .divContato1Conteudo button {
@@ -489,6 +489,7 @@ footer .divContato2 .divContato2Conteudo {
 footer .divContato2 .divContato2Conteudo .divContato2ConteudoTxt {
     font-size: 27.5px;
     margin-bottom: 20px;
+    color: #172b3d;
 }
 
 footer .divContato2 ul {
@@ -507,18 +508,18 @@ footer .divContato2 ul li {
 
 footer .divContato2 ul li a {
     text-decoration: none;
-    color: #ccffcc;
+    color: #172b3d;
 }
 
 footer .divContato2 .divContato2Conteudo .imgContato {
     width: 25px;
     height: 25px;
-    background-color: #ccffcc;
+    background-color: lightblue;
 }
 
 footer .divContato2 .divContato2Conteudo .linhaContato {
     border: none;
-    background-color: gray;
+    background-color: #172b3d;
     border-top: 0.1px dotted;
     width: 80%;
     margin-top: -5px;
@@ -630,14 +631,14 @@ footer .divServicos2 .divServicos2Conteudo ul li {
 }
 
 ::-webkit-scrollbar-track {
-    background: #ccffcc;
+    background: white;
     border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
     background: rgb(52, 165, 68);
     border-radius: 10px;
-    border: 2px solid #ccffcc;
+    border: 2px solid white;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -646,7 +647,7 @@ footer .divServicos2 .divServicos2Conteudo ul li {
 
 html {
     scrollbar-width: thin;
-    scrollbar-color: rgb(52, 165, 68) #ccffcc;
+    scrollbar-color: rgb(52, 165, 68) white;
 }
 
 .cookie-banner {
@@ -654,7 +655,7 @@ html {
     bottom: 0;
     width: 100%;
     background-color: black;
-    color: #ccffcc;
+    color: white;
     text-align: center;
     padding: 20px;
     font-size: 16px;
@@ -716,9 +717,32 @@ html {
     }
 
     .divPrincipal .divPrincipalConteudo .divPrincipalConteudoLogo {
+        display: block flex;
         margin-top: 140px;
         margin-bottom: 0px;
         margin-left: 75px;
+    }
+
+    .divPrincipal .divPrincipalConteudo .divPrincipalConteudoLogo .divPrincipalConteudoLogoImg {
+        height: 60px;
+        width: 60px;
+        margin-top: -4px;
+        margin-right: 5px;
+    }
+    
+    .divPrincipal .divPrincipalConteudo .divPrincipalConteudoLogo .divPrincipalConteudoLogoTxt .divPrincipalTxt1 {
+        margin-left: 0px;
+        font-size: 40px;
+        text-transform: uppercase;
+        color: goldenrod;
+    }
+    
+    .divPrincipal .divPrincipalConteudo .divPrincipalConteudoLogo .divPrincipalConteudoLogoTxt .divPrincipalTxt2 {
+        font-size: 15px;
+        margin-bottom: 100px;
+        margin-top: -10px;
+        text-transform: uppercase;
+        color: goldenrod;
     }
 
     .divPrincipal .divPrincipalConteudo .divPrincipalTxt1 {
@@ -816,6 +840,10 @@ html {
         margin-left: 50px;
     }
 
+    ::-webkit-scrollbar, ::-webkit-scrollbar-track, ::-webkit-scrollbar-thumb {
+        display: none;
+    }
+
 }
 
 @media (max-width: 390px) {
@@ -843,9 +871,32 @@ html {
     }
 
     .divPrincipal .divPrincipalConteudo .divPrincipalConteudoLogo {
+        display: block flex;
         margin-left: 65px;
         transform: scale(0.85);
         margin-top: -10px;
+    }
+
+    .divPrincipal .divPrincipalConteudo .divPrincipalConteudoLogo .divPrincipalConteudoLogoImg {
+        height: 60px;
+        width: 60px;
+        margin-top: -4px;
+        margin-right: 5px;
+    }
+    
+    .divPrincipal .divPrincipalConteudo .divPrincipalConteudoLogo .divPrincipalConteudoLogoTxt .divPrincipalTxt1 {
+        margin-left: 0px;
+        font-size: 40px;
+        text-transform: uppercase;
+        color: goldenrod;
+    }
+    
+    .divPrincipal .divPrincipalConteudo .divPrincipalConteudoLogo .divPrincipalConteudoLogoTxt .divPrincipalTxt2 {
+        font-size: 15px;
+        margin-bottom: 100px;
+        margin-top: -10px;
+        text-transform: uppercase;
+        color: goldenrod;
     }
 
     .divPrincipal .divPrincipalConteudo .divPrincipalTxt3 {
@@ -1018,6 +1069,10 @@ html {
         margin-left: -150px;
     }
 
+    ::-webkit-scrollbar, ::-webkit-scrollbar-track, ::-webkit-scrollbar-thumb {
+        display: none;
+    }
+
 }
 
 @media (max-width: 360px) {
@@ -1044,9 +1099,32 @@ html {
     }
 
     .divPrincipal .divPrincipalConteudo .divPrincipalConteudoLogo {
+        display: block flex;
         margin-left: 55px;
         transform: scale(0.85);
         margin-top: -10px;
+    }
+
+    .divPrincipal .divPrincipalConteudo .divPrincipalConteudoLogo .divPrincipalConteudoLogoImg {
+        height: 60px;
+        width: 60px;
+        margin-top: -4px;
+        margin-right: 5px;
+    }
+    
+    .divPrincipal .divPrincipalConteudo .divPrincipalConteudoLogo .divPrincipalConteudoLogoTxt .divPrincipalTxt1 {
+        margin-left: 0px;
+        font-size: 40px;
+        text-transform: uppercase;
+        color: goldenrod;
+    }
+    
+    .divPrincipal .divPrincipalConteudo .divPrincipalConteudoLogo .divPrincipalConteudoLogoTxt .divPrincipalTxt2 {
+        font-size: 15px;
+        margin-bottom: 100px;
+        margin-top: -10px;
+        text-transform: uppercase;
+        color: goldenrod;
     }
 
     .divPrincipal .divPrincipalConteudo .divPrincipalTxt3 {
@@ -1215,6 +1293,10 @@ html {
         margin-bottom: 0px;
         margin-left: -150px;
         white-space: nowrap
+    }
+
+    ::-webkit-scrollbar, ::-webkit-scrollbar-track, ::-webkit-scrollbar-thumb {
+        display: none;
     }
 
 }
