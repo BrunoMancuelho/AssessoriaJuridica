@@ -94,3 +94,15 @@ document.addEventListener("DOMContentLoaded", () => {
     rejectBtn.addEventListener("click", () => handleConsent("rejected"));
 });
 //----------------------------------------------------------------------------------------------------------------------------------------
+function scrollToSection(id) {
+    const target = document.getElementById(id);
+    const offset = 75; // ajuste conforme a altura do cabeçalho
+    const bodyRect = document.body.getBoundingClientRect().top;
+    const elementRect = target.getBoundingClientRect().top;
+    const position = elementRect - bodyRect + offset;
+
+    window.scrollTo({
+        top: position,
+        behavior: "smooth"
+    });
+}
