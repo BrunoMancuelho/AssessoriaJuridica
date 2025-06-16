@@ -770,7 +770,7 @@ html {
     }
 
     .divDiferencial {
-        height: 1300px;
+        height: 1250px;
     }
 
     .divDiferencial .divDiferencialConteudo .divDiferencialTxt {
@@ -786,45 +786,127 @@ html {
         gap: 15px;
     }
 
-    footer .divContato {
-        height: 700px;
+    footer {
+        height: 1235px;;
     }
 
-    footer .divContato,
-    footer .divServicos {
+    footer .divContato {
+        height: 650px;
+        width: 100%;
         display: flex;
         flex-direction: column;
     }
 
-    footer .divContato .divContato1 .divContato1Conteudo {
+    footer .divContato .divContato1 {
+        height: 400px;
+        width: 100%;
         margin-top: 0px;
-        margin-left: -42.5px;
+        margin-bottom: 0px;
+        padding: 0px;
+    }
+
+    footer .divContato .divContato1 .divContato1Conteudo {
+        height: 400px;
+        width: 100%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
         transform: scale(0.85);
     }
 
+    footer .divContato .divContato1 .divContato1Conteudo .divContato1ConteudoTxt,
+    footer .divContato .divContato1 .divContato1Conteudo form {
+        margin-left: -30px;
+    }
+
+    footer .divContato .divContato2 {
+        height: 250px;
+        width: 100%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    }
+
     footer .divContato .divContato2 .divContato2Conteudo {
-        margin-top: 50px;
-        margin-left: 50px;
+        height: 250px;
+        width: 100%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
     }
 
     footer .divContato2 .divContato2Conteudo .linhaContato {
-        width: 62.5%;
+        width: 85%;
+    }
+
+    footer .divContato .divContato2 .divContato2Conteudo .divContato2ConteudoTxt,
+    footer .divContato .divContato2 .divContato2Conteudo ul {
+        padding-left: 50px;
     }
 
     footer .divServicos {
-        background-size: 100% 600px;
-        height: 600px;
+        background-size: 100% 585px;
+        height: 585px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    }
+
+    footer .divServicos1 {
+        height: 225px;
+        width: 100%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
     }
 
     footer .divServicos .divServicos1 .divServicos1Conteudo {
-        margin-top: 100px;
-        margin-left: 50px;
+        height: 225px;
+        width: 100%;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    footer .divServicos .divServicos1 .divServicos1Conteudo .divServicos1ConteudoLogo,
+    footer .divServicos .divServicos1 .divServicos1Conteudo .divServicos1ConteudoPolitica {
+        padding-top: 50px;
+        padding-left: 100px;
+    }
+
+    footer .divServicos2 {
+        height: 360px;
+        width: 100%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    }
+
+    footer .divServicos2 .divServicos2Conteudo {
+        height: 360px;
+        width: 100%;
+        margin-top: 0px;
+        margin-left: 0px;
     }
 
     footer .divServicos .divServicos2 .divServicos2Conteudo {
-        margin-top: 50px;
+        height: 360px;
+        width: 100%;
+        margin-top: 0px;
         margin-bottom: 0px;
-        margin-left: 50px;
+        margin-left: 0px;
+    }
+
+    footer .divServicos .divServicos2 .divServicos2Conteudo .divServicos2ConteudoTxt{
+        padding-left: 100px;
+    }
+
+    footer .divServicos .divServicos2 .divServicos2Conteudo ul {
+        padding-left: 100px;
     }
 
     ::-webkit-scrollbar, ::-webkit-scrollbar-track, ::-webkit-scrollbar-thumb {
@@ -833,7 +915,7 @@ html {
 
 }
 
-@media (max-width: 390px) {
+@media (max-width: 429px) and (min-width: 390px) {
     
     html, body {
         overflow-x: hidden;
@@ -1024,13 +1106,6 @@ html {
         padding: 0px;
     }
 
-    footer .divServicos2 {
-        height: 335px;
-        width: 100%;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        padding: 0px;
-    }
 
     footer .divServicos .divServicos1 .divServicos1Conteudo .divServicos1ConteudoLogo {
         transform: scale(0.8);
@@ -1045,15 +1120,30 @@ html {
         margin-top: -35px;
     }
 
+    footer .divServicos2 {
+        height: 335px;
+        width: 100%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    }
+
+    footer .divServicos2 .divServicos2Conteudo {
+        height: 335px;
+        width: 100%;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
     footer .divServicos .divServicos2 .divServicos2Conteudo .divServicos2ConteudoTxt {
-        margin-top: -50px;
+        margin-top: 0px;
     }
     
     footer .divServicos .divServicos2 .divServicos2Conteudo .divServicos2ConteudoTxt,
     footer .divServicos .divServicos2 .divServicos2Conteudo ul {
         transform: scale(0.9);
         margin-bottom: 0px;
-        margin-left: -150px;
+        margin-left: 0px;
     }
 
     ::-webkit-scrollbar, ::-webkit-scrollbar-track, ::-webkit-scrollbar-thumb {
@@ -1063,7 +1153,7 @@ html {
 }
 
 @media (max-width: 389px) and (min-width: 361px) {
-    
+
     body {
         overflow-x: hidden;
     }
@@ -1249,14 +1339,6 @@ html {
         padding: 0px;
     }
 
-    footer .divServicos2 {
-        height: 335px;
-        width: 100%;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        padding: 0px;
-    }
-
     footer .divServicos .divServicos1 .divServicos1Conteudo .divServicos1ConteudoLogo {
         transform: scale(0.8);
         margin-top: -25px;
@@ -1270,15 +1352,30 @@ html {
         margin-top: -35px;
     }
 
+    footer .divServicos2 {
+        height: 335px;
+        width: 100%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    }
+
+    footer .divServicos2 .divServicos2Conteudo {
+        height: 335px;
+        width: 100%;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
     footer .divServicos .divServicos2 .divServicos2Conteudo .divServicos2ConteudoTxt {
-        margin-top: -50px;
+        margin-top: 0px;
     }
     
     footer .divServicos .divServicos2 .divServicos2Conteudo .divServicos2ConteudoTxt,
     footer .divServicos .divServicos2 .divServicos2Conteudo ul{
         transform: scale(0.9);
         margin-bottom: 0px;
-        margin-left: -150px;
+        margin-left: 0px;
         white-space: nowrap
     }
 
@@ -1288,7 +1385,7 @@ html {
 
 }
 
-@media (max-width: 360px) {
+@media (max-width: 360px) {    
 
     body {
         overflow-x: hidden;
@@ -1414,6 +1511,12 @@ html {
         gap: 15px;
     }
 
+    footer {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
     footer .divContato {
         height: 315px;
         width: 100%;
@@ -1475,14 +1578,6 @@ html {
         padding: 0px;
     }
 
-    footer .divServicos2 {
-        height: 335px;
-        width: 100%;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        padding: 0px;
-    }
-
     footer .divServicos .divServicos1 .divServicos1Conteudo .divServicos1ConteudoLogo {
         transform: scale(0.8);
         margin-top: -25px;
@@ -1496,15 +1591,30 @@ html {
         margin-top: -35px;
     }
 
+    footer .divServicos2 {
+        height: 335px;
+        width: 100%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    }
+
+    footer .divServicos2 .divServicos2Conteudo {
+        height: 335px;
+        width: 100%;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
     footer .divServicos .divServicos2 .divServicos2Conteudo .divServicos2ConteudoTxt {
-        margin-top: -50px;
+        margin-top: 0px;
     }
     
     footer .divServicos .divServicos2 .divServicos2Conteudo .divServicos2ConteudoTxt,
     footer .divServicos .divServicos2 .divServicos2Conteudo ul{
         transform: scale(0.9);
         margin-bottom: 0px;
-        margin-left: -150px;
+        margin-left: 0px;
         white-space: nowrap
     }
 
