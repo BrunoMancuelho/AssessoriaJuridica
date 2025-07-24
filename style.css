@@ -1540,7 +1540,7 @@ html {
     }
 
     footer .divContato .divContato1 .divContato1Conteudo {
-        transform: scale(0.6);
+        transform: scale(0.55);
         margin-top: -40px;
         margin-left: -70px;
     }
@@ -1621,6 +1621,10 @@ html {
 
     ::-webkit-scrollbar, ::-webkit-scrollbar-track, ::-webkit-scrollbar-thumb {
         display: none;
+    }
+
+    .cookie-banner {
+        width: 100%;
     }
 
 }
