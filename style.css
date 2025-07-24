@@ -1385,7 +1385,7 @@ html {
 
 }
 
-@media (max-width: 360px) {    
+@media (max-width: 358px) {    
 
     body {
         overflow-x: hidden;
@@ -1474,6 +1474,7 @@ html {
         transform: scale(0.8);
         margin-top: -75px;
         margin-left: -12.5px;
+        display: none;
     }
 
     .divAreas .divAreasConteudo .carrossel2 .marcador2 {
