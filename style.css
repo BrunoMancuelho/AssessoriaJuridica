@@ -866,6 +866,11 @@ html {
         display: none;
     }
 
+    .whatsapp-button {
+        bottom: 50px;
+        right: 50px;
+    }
+
 }
 
 @media (max-width: 429px) and (min-width: 390px) {
