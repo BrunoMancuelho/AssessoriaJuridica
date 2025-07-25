@@ -1345,7 +1345,7 @@ html {
         padding: 0;
         width: 100%;
         overflow-x: hidden;
-    }      
+    }
 
     nav {
         display: none;
@@ -1430,7 +1430,6 @@ html {
         transform: scale(0.8);
         margin-top: -75px;
         margin-left: -12.5px;
-        display: none;
     }
 
     .divAreas .divAreasConteudo .carrossel2 .marcador2 {
@@ -1577,11 +1576,6 @@ html {
 
     ::-webkit-scrollbar, ::-webkit-scrollbar-track, ::-webkit-scrollbar-thumb {
         display: none;
-    }
-
-    .whatsapp-button {
-        bottom: 85px;
-        right: 50px;
     }
 
 }
