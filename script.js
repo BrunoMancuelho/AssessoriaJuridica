@@ -75,25 +75,6 @@ window.onclick = function (event) {
     }
 };
 //----------------------------------------------------------------------------------------------------------------------------------------
-// Cookies
-document.addEventListener("DOMContentLoaded", () => {
-    const banner = document.getElementById("cookie-banner");
-    const acceptBtn = document.getElementById("accept-cookies");
-    const rejectBtn = document.getElementById("reject-cookies");
-
-    if (!localStorage.getItem("cookie-consent")) {
-        banner.style.display = "block";
-    }
-
-    const handleConsent = (consent) => {
-        localStorage.setItem("cookie-consent", consent);
-        banner.style.display = "none";
-    };
-
-    acceptBtn.addEventListener("click", () => handleConsent("accepted"));
-    rejectBtn.addEventListener("click", () => handleConsent("rejected"));
-});
-//----------------------------------------------------------------------------------------------------------------------------------------
 function scrollToSection(id) {
     const target = document.getElementById(id);
     const offset = 75; // ajuste conforme a altura do cabeçalho

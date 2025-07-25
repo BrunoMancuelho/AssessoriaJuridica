@@ -637,53 +637,6 @@ html {
     scrollbar-color: rgb(52, 165, 68) white;
 }
 
-.cookie-banner {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    font-size: 16px;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-    z-index: 9999;
-    display: none;
-    font-weight: bold;
-}
-
-.cookie-banner p {
-    margin-bottom: 10px;
-}
-
-.cookie-banner a {
-    color: rgb(52, 165, 68);
-    text-decoration: underline;
-}
-
-.cookie-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-
-.cookie-buttons button {
-    background-color: rgb(52, 165, 68);
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
-.cookie-buttons button:hover {
-    background-color: white;
-    color: rgb(52, 165, 68);
-    transform: scale(1.05);
-}
-
 @media (max-width: 768px) and (min-width: 431px) {
 
     body {
@@ -1621,10 +1574,6 @@ html {
 
     ::-webkit-scrollbar, ::-webkit-scrollbar-track, ::-webkit-scrollbar-thumb {
         display: none;
-    }
-
-    .cookie-banner {
-        width: 100%;
     }
 
 }
