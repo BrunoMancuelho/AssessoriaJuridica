@@ -1340,9 +1340,12 @@ html {
 
 @media (max-width: 360px) {    
 
-    body {
+    html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
         overflow-x: hidden;
-    }
+    }      
 
     nav {
         display: none;
@@ -1577,7 +1580,7 @@ html {
     }
 
     .whatsapp-button {
-        bottom: 70px;
+        bottom: 85px;
         right: 50px;
     }
 
