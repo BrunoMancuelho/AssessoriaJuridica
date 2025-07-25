@@ -197,13 +197,15 @@ header nav ul li .headerConteudoLogo .headerConteudoLogoTxt .headerTxt2 {
 }
 
 .carousel2 {
-    position: absolute;
-    width: 1225px;
-    height: 500px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
+    width: 100%;
+    max-width: 1225px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    transform: none;
+    left: 0;
+    top: 0;
+}  
 
 .carousel2-cell {
     width: 365px;
@@ -639,8 +641,9 @@ html {
 
 @media (max-width: 768px) and (min-width: 431px) {
 
-    body {
-        height: 100%;
+    html, body {
+        margin: 0;
+        padding: 0;
         width: 100%;
         overflow-x: hidden;
     }
@@ -871,8 +874,10 @@ html {
 @media (max-width: 429px) and (min-width: 390px) {
     
     html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
         overflow-x: hidden;
-        max-width: 100%;
     }
 
     nav {
@@ -894,8 +899,8 @@ html {
 
     .divPrincipal .divPrincipalConteudo .divPrincipalConteudoLogo {
         display: block flex;
-        margin-left: 65px;
-        transform: scale(0.85);
+        margin-left: 100px;
+        transform: scale(0.9);
         margin-top: -10px;
     }
 
@@ -1107,7 +1112,10 @@ html {
 
 @media (max-width: 389px) and (min-width: 361px) {
 
-    body {
+    html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
         overflow-x: hidden;
     }
 
@@ -1130,7 +1138,7 @@ html {
 
     .divPrincipal .divPrincipalConteudo .divPrincipalConteudoLogo {
         display: block flex;
-        margin-left: 55px;
+        margin-left: 90px;
         transform: scale(0.85);
         margin-top: -10px;
     }
@@ -1170,7 +1178,7 @@ html {
     .divPrincipal .divPrincipalConteudo .divPrincipalButton {
         margin-left: 18.5px;
         height: 50px;
-        width: 320px;
+        width: 335px;
     }
 
     .divAreas {
@@ -1366,7 +1374,7 @@ html {
 
     .divPrincipal .divPrincipalConteudo .divPrincipalConteudoLogo {
         display: block flex;
-        margin-left: 55px;
+        margin-left: 85px;
         transform: scale(0.85);
         margin-top: -10px;
     }
@@ -1577,5 +1585,11 @@ html {
     ::-webkit-scrollbar, ::-webkit-scrollbar-track, ::-webkit-scrollbar-thumb {
         display: none;
     }
+
+    @media (min-width: 480px) and (max-width: 900px) and (orientation: landscape) {
+        
+        
+        
+    }      
 
 }
