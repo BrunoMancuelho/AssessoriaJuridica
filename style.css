@@ -199,13 +199,13 @@ header nav ul li .headerConteudoLogo .headerConteudoLogoTxt .headerTxt2 {
 .carousel2 {
     width: 100%;
     max-width: 1225px;
-    height: 100%;
+    height: auto;
     margin: 0 auto;
     position: relative;
-    transform: none;
-    left: 0;
     top: 0;
-}  
+    left: 0;
+    transform: none;
+}
 
 .carousel2-cell {
     width: 365px;

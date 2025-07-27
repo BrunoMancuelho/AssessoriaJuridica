@@ -8,14 +8,17 @@ document.querySelector('.divPrincipalButton').addEventListener('click', function
 });
 //----------------------------------------------------------------------------------------------------------------------------------------
 // Inicializa o Flickity para o carrossel2
+// Detecta se a tela é pequena (celular)
+var isMobile = window.innerWidth <= 768;
+
 var flkty2 = new Flickity('.carousel2', {
     cellAlign: 'left',
     contain: true,
-    prevNextButtons: false,  // Desativa os botões padrão de navegação
-    wrapAround: true,        // Habilita o loop infinito (carrossel reinicia ao chegar no final)
-    groupCells: false,       // Desativa a exibição de múltiplas células por vez
-    dragThreshold: 10,       // Define a sensibilidade do movimento de arraste
-    pageDots: false          // Desativa os pontos de navegação
+    wrapAround: true,
+    groupCells: isMobile ? 1 : 3, // 1 imagem por vez no celular
+    dragThreshold: 10,
+    pageDots: false,
+    prevNextButtons: false
 });
 
 // Função para mover o marcador2
