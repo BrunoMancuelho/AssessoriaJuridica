@@ -198,7 +198,8 @@ header nav ul li .headerConteudoLogo .headerConteudoLogoTxt .headerTxt2 {
 
 .carousel2 {
     position: absolute;
-    width: 1225px;
+    width: 100%; /* adapta ao tamanho da tela */
+    max-width: 1225px; /* limita no desktop */
     height: 500px;
     top: 50%;
     left: 50%;
