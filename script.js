@@ -15,7 +15,7 @@ var flkty2 = new Flickity('.carousel2', {
     cellAlign: 'left',
     contain: true,
     wrapAround: true,
-    groupCells: isMobile ? 1 : 3, // 1 imagem por vez no celular
+    groupCells: 1,
     dragThreshold: 10,
     pageDots: false,
     prevNextButtons: false
