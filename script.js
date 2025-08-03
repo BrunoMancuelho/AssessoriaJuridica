@@ -15,7 +15,7 @@ var flkty2 = new Flickity('.carousel2', {
     cellAlign: 'left',
     contain: true,
     wrapAround: true,
-    groupCells: 1,
+    groupCells: false,
     dragThreshold: 10,
     pageDots: false,
     prevNextButtons: false

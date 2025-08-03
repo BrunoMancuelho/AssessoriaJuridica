@@ -948,7 +948,7 @@ html {
 
     .divAreas .divAreasConteudo {
         height: 460px;
-        width: 100%;
+        width: 390px;
         margin-top: 0px;
         margin-left: 0px;
     }
@@ -1676,7 +1676,7 @@ html {
     }
 
     .divAreas .divAreasConteudo .divAreasTxt {
-        margin-left: 340px;
+        margin-left: 350px;
     }
 
     .divAreas .divAreasConteudo .carrossel2 {
