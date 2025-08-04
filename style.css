@@ -1502,7 +1502,7 @@ html {
     }
 
     footer .divContato .divContato1 .divContato1Conteudo {
-        transform: scale(0.55);
+        transform: scale(0.6);
         margin-top: -40px;
         margin-left: -70px;
     }
@@ -1662,7 +1662,7 @@ html {
         margin-top: 0px;
         margin-left: -10px;
         height: 60px;
-        width: 750px;
+        width: 740px;
     }
 
     .divAreas {
@@ -1724,7 +1724,7 @@ html {
         width: 100%;
         margin-top: 0px;
         margin-bottom: 0px;
-        margin-left: 0px;
+        margin-left: 150px;
         margin-right: 0px;
         transform: scale(0.85);
     }
@@ -1747,12 +1747,12 @@ html {
         width: 100%;
         margin-top: 0px;
         margin-bottom: 0px;
-        margin-left: 0px;
+        margin-left: 150px;
         margin-right: 0px;
     }
 
     footer .divContato2 .divContato2Conteudo .linhaContato {
-        width: 85%;
+        width: 57.5%;
     }
 
     footer .divContato .divContato2 .divContato2Conteudo .divContato2ConteudoTxt,
@@ -1854,7 +1854,8 @@ html {
         display: block flex;
         margin-top: 140px;
         margin-bottom: 0px;
-        margin-left: 75px;
+        margin-left: 225px;
+        transform: scale(1.2);
     }
 
     .divPrincipal .divPrincipalConteudo .divPrincipalConteudoLogo .divPrincipalConteudoLogoImg {
@@ -1901,9 +1902,9 @@ html {
 
     .divPrincipal .divPrincipalConteudo .divPrincipalButton {
         margin-top: 0px;
-        margin-left: -25px;
+        margin-left: -18.5px;
         height: 60px;
-        width: 440px;
+        width: 600px;
     }
 
     .divAreas {
