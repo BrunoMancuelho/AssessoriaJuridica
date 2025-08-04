@@ -455,7 +455,7 @@ footer .divContato1 .divContato1Conteudo button {
     height: 60px;
     width: 550px;
     margin-top: 8px;
-    background-color: yellow;
+    background-color: rgb(238, 199, 4);
     color: black;
     border: none;
     border-radius: 5px;
@@ -1481,18 +1481,18 @@ html {
     }
 
     footer .divContato {
-        height: 420px;
+        height: 475px;
         width: 100%;
         margin-left: 0px;
     }
 
     footer .divContato1 {
-        height: 275px;
+        height: 300px;
         width: 100%;
     }
 
     footer .divContato2 {
-        height: 145px;
+        height: 175px;
         width: 100%;
     }
 
@@ -1503,42 +1503,45 @@ html {
 
     footer .divContato .divContato1 .divContato1Conteudo {
         transform: scale(0.6);
-        margin-top: -60px;
+        margin-top: -100px;
         margin-left: -70px;
     }
 
     footer .divContato .divContato1 .divContato1Conteudo .divContato1ConteudoTxt {
-        font-size: 42.5px;
+        font-size: 45px;
     }
 
     footer .divContato .divContato1 .divContato1Conteudo form input[type="text"],
     footer .divContato .divContato1 .divContato1Conteudo form input[type="email"] {
-        height: 80px;
+        height: 90px;
+        border-radius: 10px;
     }
 
     footer .divContato .divContato1 .divContato1Conteudo form textarea {
-        height: 160px;
+        height: 180px;
+        border-radius: 10px;
     }
 
     footer .divContato .divContato1 .divContato1Conteudo form input::placeholder,
     footer .divContato .divContato1 .divContato1Conteudo form textarea::placeholder {
         font-size: 25px;
+        padding-left: 10px;
     }
 
     footer .divContato .divContato1 .divContato1Conteudo form button {
-        height: 80px;
-        font-size: 25px;
+        height: 90px;
+        font-size: 30px;
+        border-radius: 10px;
     }
 
-    footer .divContato .divContato2 .divContato2Conteudo {
-        transform: scale(0.8);
-        margin-top: 125px;
-        margin-left: 0px;
+    footer .divContato .divContato2 .divContato2Conteudo {        
+        margin-top: 150px;
+        margin-left: 25px;
         white-space: nowrap;
     }
 
     footer .divContato2 .divContato2Conteudo .linhaContato {
-        width: 100%;
+        width: 91%;
     }
 
     footer .divServicos {
