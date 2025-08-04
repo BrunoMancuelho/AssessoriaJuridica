@@ -1515,17 +1515,20 @@ html {
     footer .divContato .divContato1 .divContato1Conteudo form input[type="email"] {
         height: 90px;
         border-radius: 10px;
+        padding-left: 30px;
+        font-size: 25px;
     }
 
     footer .divContato .divContato1 .divContato1Conteudo form textarea {
         height: 180px;
         border-radius: 10px;
+        padding-left: 30px;
+        font-size: 25px;
     }
 
     footer .divContato .divContato1 .divContato1Conteudo form input::placeholder,
     footer .divContato .divContato1 .divContato1Conteudo form textarea::placeholder {
         font-size: 25px;
-        padding-left: 10px;
     }
 
     footer .divContato .divContato1 .divContato1Conteudo form button {
@@ -1534,7 +1537,8 @@ html {
         border-radius: 10px;
     }
 
-    footer .divContato .divContato2 .divContato2Conteudo {        
+    footer .divContato .divContato2 .divContato2Conteudo {  
+        transform: scale(0.95);      
         margin-top: 150px;
         margin-left: 25px;
         white-space: nowrap;
