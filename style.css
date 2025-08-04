@@ -1481,13 +1481,13 @@ html {
     }
 
     footer .divContato {
-        height: 315px;
+        height: 420px;
         width: 100%;
         margin-left: 0px;
     }
 
     footer .divContato1 {
-        height: 170px;
+        height: 275px;
         width: 100%;
     }
 
@@ -1503,19 +1503,38 @@ html {
 
     footer .divContato .divContato1 .divContato1Conteudo {
         transform: scale(0.6);
-        margin-top: -40px;
+        margin-top: -60px;
         margin-left: -70px;
     }
 
     footer .divContato .divContato1 .divContato1Conteudo .divContato1ConteudoTxt {
-        white-space: nowrap
+        font-size: 42.5px;
+    }
+
+    footer .divContato .divContato1 .divContato1Conteudo form input[type="text"],
+    footer .divContato .divContato1 .divContato1Conteudo form input[type="email"] {
+        height: 80px;
+    }
+
+    footer .divContato .divContato1 .divContato1Conteudo form textarea {
+        height: 160px;
+    }
+
+    footer .divContato .divContato1 .divContato1Conteudo form input::placeholder,
+    footer .divContato .divContato1 .divContato1Conteudo form textarea::placeholder {
+        font-size: 25px;
+    }
+
+    footer .divContato .divContato1 .divContato1Conteudo form button {
+        height: 80px;
+        font-size: 25px;
     }
 
     footer .divContato .divContato2 .divContato2Conteudo {
         transform: scale(0.8);
         margin-top: 125px;
         margin-left: 0px;
-        white-space: nowrap
+        white-space: nowrap;
     }
 
     footer .divContato2 .divContato2Conteudo .linhaContato {
