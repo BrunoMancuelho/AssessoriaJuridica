@@ -8,48 +8,57 @@ document.querySelector('.divPrincipalButton').addEventListener('click', function
 });
 //----------------------------------------------------------------------------------------------------------------------------------------
 // Inicializa o Flickity para o carrossel2
-// Detecta se a tela é pequena (celular)
-var isMobile = window.innerWidth <= 768;
+let flkty2;
 
-var flkty2 = new Flickity('.carousel2', {
-    cellAlign: 'left',
-    contain: true,
-    wrapAround: true,
-    groupCells: false,
-    dragThreshold: 10,
-    pageDots: false,
-    prevNextButtons: false
-});
-
-// Função para mover o marcador2
 function updateMarker2() {
-    var index = flkty2.selectedIndex;  // Obtém o índice da célula selecionada
-    var totalCells = flkty2.slides.length;  // Total de células no carrossel
-    var markerPosition = (index / totalCells) * 5;  // Calcula a posição do marcador2
+    if (!flkty2) return;
 
-    // Atualiza a posição do marcador2
-    var marker = document.querySelector('.marcador2');
+    const index = flkty2.selectedIndex;
+    const totalCells = flkty2.slides.length;
+    const markerPosition = (index / totalCells) * 5;
+
+    const marker = document.querySelector('.marcador2');
     if (marker) {
         marker.style.left = markerPosition + '%';
     }
 }
 
-// Atualiza o marcador2 ao mudar de imagem
-flkty2.on('change', function () {
-    updateMarker2();
-});
+function initCarousel() {
+    if (flkty2) {
+        flkty2.destroy(); // Remove o carrossel atual, se já estiver iniciado
+    }
 
-// Personaliza os botões de navegação para o carrossel2
+    const isMobile = window.innerWidth <= 768;
+
+    flkty2 = new Flickity('.carousel2', {
+        cellAlign: isMobile ? 'center' : 'left',
+        contain: true,
+        wrapAround: true,
+        groupCells: isMobile ? 1 : false,
+        dragThreshold: 10,
+        pageDots: false,
+        prevNextButtons: false
+    });
+
+    flkty2.on('change', updateMarker2);
+
+    updateMarker2();
+}
+
+// Inicializa o carrossel na primeira carga
+initCarousel();
+
+// Recria o carrossel ao redimensionar a janela
+window.addEventListener('resize', initCarousel);
+
+// Botões de navegação
 document.getElementById('btn3').addEventListener('click', function () {
-    flkty2.previous();  // Retrocede uma imagem por vez
+    flkty2.previous();
 });
 
 document.getElementById('btn4').addEventListener('click', function () {
-    flkty2.next();  // Avança uma imagem por vez
+    flkty2.next();
 });
-
-// Inicializa a posição do marcador2 na primeira célula
-updateMarker2();
 //----------------------------------------------------------------------------------------------------------------------------------------
 // Janela que aparece quando clica no carrossel.
 var modal = document.getElementById("modalCarrossel");
